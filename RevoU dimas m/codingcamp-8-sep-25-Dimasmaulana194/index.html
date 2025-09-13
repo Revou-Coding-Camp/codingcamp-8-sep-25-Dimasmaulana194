@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REVO Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="img/Logo-RevoU-5-removebg-preview.png" alt="Logo" />
+        <span>REVO</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="our-profile.html">Our Profile</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#message">Message Us</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 id="welcome">Hello, I’m Dimas a Software Engineer</h1>
+        <p>
+          Turning ideas into modern digital solutions that drive innovation and
+          make an impact 🚀
+        </p>
+        <a href="our-profile.html" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="hq">
+      <h2>Our Headquarters</h2>
+      <p>
+        Kami memiliki beberapa pusat kantor di kota besar Indonesia untuk lebih
+        dekat dengan Anda.
+      </p>
+      <div class="cities">
+        <div class="city">
+          <div class="circle"></div>
+          <h3>Jakarta</h3>
+          <p>Jl. Jendral Sudirman No.12<br />Jawa Barat</p>
+        </div>
+        <div class="city">
+          <div class="circle"></div>
+          <h3>Bandung</h3>
+          <p>Jl. Pemuda No.8<br />Jawa Barat</p>
+        </div>
+        <div class="city">
+          <div class="circle"></div>
+          <h3>Surabaya</h3>
+          <p>Jl. Sudirman No.21<br />Jawa Timur</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="message">
+      <h2>Message Us</h2>
+      <p>Kirim pesan Anda kepada kami, tim akan segera merespons.</p>
+      <div class="form-container">
+        <form id="messageForm">
+          <label for="name">Nama :</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+
+          <label for="dob">Tanggal Lahir :</label>
+          <input type="date" id="dob" required />
+
+          <label>Jenis Kelamin :</label>
+          <div class="gender">
+            <label
+              ><input type="radio" name="gender" value="Laki-Laki" required />
+              Laki-Laki</label
+            >
+            <label
+              ><input type="radio" name="gender" value="Perempuan" />
+              Perempuan</label
+            >
+          </div>
+
+          <label for="messageText">Pesan :</label>
+          <textarea
+            id="messageText"
+            placeholder="Tuliskan pesan Anda di sini..."
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="output" id="output">
+          <h3>Preview Data:</h3>
+          <p>Data yang Anda isi akan muncul di sini.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 REVO. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
